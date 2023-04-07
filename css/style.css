@@ -1,0 +1,412 @@
+body {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.mainPayment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.payment {
+    background-color: #FFFFFF;
+    width: 760px;
+    height: 525px;
+    padding: 50px;
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+
+.paymentInner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paymentTitle h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #314557;
+    margin: 0;
+}
+
+.paymentContent {
+    width: 100%;
+}
+
+.paymentContentCard {
+    display: flex;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.paymentContentCardImg {
+    width: 180px;
+    height: 75px;
+    background-color: #591E4A;
+    border: solid 1px #591E4A;
+    border-radius: 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
+    transition: 300ms;
+}
+
+.paymentContentCard:nth-child(1) .paymentContentCardImg {
+    background-image: url(../img/QR.png);
+}
+
+.paymentContentCard:nth-child(2) .paymentContentCardImg {
+    background-image: url(../img/bank.png);
+}
+
+.paymentContentCard:nth-child(3) .paymentContentCardImg {
+    background-image: url(../img/card.png);
+    background-size: 150px 30px;
+}
+
+.paymentContentCardText {
+    margin: 0px;
+    margin-left: 35px;
+    width: calc(100% - 181px - 36px);
+}
+
+.paymentContentCardText span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #314557;
+}
+
+.paymentContentCardText p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #314557;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.paymentContentCard:hover .paymentContentCardImg {
+    background: #FFFFFF;
+    border: #591E4A 1px solid;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: center;
+}
+
+.paymentContentCard:nth-child(1):hover .paymentContentCardImg {
+    background-image: url(../img/QRHover.png);
+}
+
+.paymentContentCard:nth-child(2):hover .paymentContentCardImg {
+    background-image: url(../img/bankHover.png);
+}
+
+.paymentContentCard:nth-child(3):hover .paymentContentCardImg {
+    background-image: url(../img/cardHover.png);
+    background-size: 150px 30px;
+}
+
+.paymentQR {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paymentIP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.amountArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.amountAreaBorder {
+    width: 410px;
+    box-sizing: border-box;
+    border: 1px solid #314557;
+    border-radius: 11px;
+    padding: 70px 100px 25px 100px
+}
+
+.amountArea input {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #314557;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #314557
+}
+
+.paymentButton {
+    padding: 24px 35px;
+    margin-top: 70px;
+    background-color: #591E4A;
+    border: solid 1px #591E4A;
+    border-radius: 11px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    transition: 300ms;
+}
+
+.paymentButton:hover {
+    background: #FFFFFF;
+    border: #591E4A 1px solid;
+    color: #591E4A;
+}
+
+.mainSendPrint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.sendPrint {
+    background-color: #FFFFFF;
+    width: 840px;
+    padding: 50px;
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+
+.sendPrintInner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sendPrintTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    color: #314557;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.sendPrintTitle h2 {
+    font-weight: 500;
+    font-size: 33px;
+    width: 100%;
+    margin: 0;
+}
+
+.sendPrintTitle h3 {
+    font-weight: 400;
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.sendPrintTitle p {
+    font-weight: 400;
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.sendPrintContent {
+    width: 100%;
+}
+
+.sendPrintTable {
+    display: flex;
+    width: 100%;
+    border: solid 1px #314557;
+    margin-top: 15px;
+}
+
+.sendPrintTableLeft {
+    width: 50%;
+    padding: 20px auto;
+}
+
+.sendPrintTableRight {
+    border-left: solid 1px #314557;
+    ;
+    width: 50%;
+    padding: 20px auto;
+}
+
+.sendPrintTableList {
+    display: block;
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.sendPrintTableList li {
+    margin-top: 15px;
+}
+
+.sendPrintPrice {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #314557;
+}
+
+.sendPrintPrice span {
+    color: #591E4A
+}
+
+.sendPrintPay {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.sendPrintPayCheckboxWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sendPrintPayCheckbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.sendPrintPayCheckbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sendPrintPayCheckbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #314557;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.sendPrintPayCheckbox:checked+label::before {
+    background-image: url("../svg/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+.sendPrintPayButtons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sendPrintPayButtonWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.sendPrintPayButtonPay {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #591E4A;
+    border: solid 1px #591E4A;
+    border-radius: 11px;
+    padding: 15px 70px; 
+    transition: 300ms;
+}
+
+.sendPrintPayButtonPay:hover {
+    background: #FFFFFF;
+    border: #591E4A 1px solid;
+    color: #591E4A;
+}
+
+.sendPrintPayButtonCancel {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #314557;
+    border: solid 1px #314557;
+    border-radius: 11px;
+    padding: 15px 70px; 
+    transition: 300ms;
+}
+
+.sendPrintPayButtonCancel:hover {
+    background: #FFFFFF;
+    border: #314557 1px solid;
+    color: #314557;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide {
+    display: none;
+}

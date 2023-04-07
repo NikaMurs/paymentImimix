@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main class="mainPayment">
+        <div class="payment">
+            <div class="paymentInner">
+
+                <div class="paymentTitle">
+                    <h2>Пополнение счёта</h2>
+                </div>
+
+                <div class="paymentContent">
+
+                    <div class="paymentContentCard">
+                        <div class="paymentContentCardImg"></div>
+                        <div class="paymentContentCardText">
+                            <span>Оплата QR</span>
+                            <p>Основной способ оплаты. Зачисление мгновенно.</p>
+                        </div>
+                    </div>
+
+                    <div class="paymentContentCard">
+                        <div class="paymentContentCardImg"></div>
+                        <div class="paymentContentCardText">
+                            <span>Счёт для ИП и ЮЛ</span>
+                            <p>Зачисление автоматически, как правило в течение 1-2 часов. Подарим 1% от суммы
+                                зачисления.</p>
+                        </div>
+                    </div>
+
+                    <div class="paymentContentCard">
+                        <div class="paymentContentCardImg"></div>
+                        <div class="paymentContentCardText">
+                            <span>Оплата картой</span>
+                            <p>Из-за высокой комиссии, просьба пользоваться данным способом только при оплате
+                                кредитной
+                                картой.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="paymentQR hide">
+                        <div class="paymentTitle">
+                            <h2>Оплата QR</h2>
+                        </div>
+                        <div class="amountArea">
+                            <div class="amountAreaBorder">
+                                <input type="text" name="" placeholder="Введите сумму">
+                            </div>
+                        </div>
+                        <a href="" class="paymentButton">Сгенерировать<br>QR-код</a>
+                    </div>
+
+                    <div class="paymentIP hide">
+                        <div class="paymentTitle">
+                            <h2>Счёт для ИП и ЮЛ</h2>
+                        </div>
+                        <div class="amountArea">
+                            <div class="amountAreaBorder">
+                                <input type="text" name="" placeholder="Введите сумму">
+                            </div>
+                        </div>
+                        <a href="" class="paymentButton">Сгенерировать<br>счёт</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/script.js"></script>
+    </main>
+</body>
+
+</html>
